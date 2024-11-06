@@ -1,0 +1,58 @@
+# Blender MTL File: 'render1.blend'
+# Material Count: 5
+
+newmtl 12377503_dds
+Ns 9.803922
+Ka 0.700000 0.700000 0.700000
+Kd 0.700000 0.700000 0.700000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd E:\data\3d models\1960 Toyota Land Cruiser_\1960 Toyota Land Cruiser\textures\texture_0006.dds
+map_Ka E:\\data\\3d models\\1960 Toyota Land Cruiser_\\1960 Toyota Land Cruiser\\textures\\texture_0006.dds
+
+newmtl 1f5ee341_dds
+Ns 9.803922
+Ka 0.700000 0.700000 0.700000
+Kd 0.700000 0.700000 0.700000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd E:\data\3d models\1960 Toyota Land Cruiser_\1960 Toyota Land Cruiser\textures\texture_0009.dds
+map_Ka E:\\data\\3d models\\1960 Toyota Land Cruiser_\\1960 Toyota Land Cruiser\\textures\\texture_0009.dds
+
+newmtl 7c5efad8_dds
+Ns 9.803922
+Ka 0.700000 0.700000 0.700000
+Kd 0.700000 0.700000 0.700000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Material.001
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl c7853266_dds
+Ns 9.803922
+Ka 0.700000 0.700000 0.700000
+Kd 0.700000 0.700000 0.700000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd E:\data\3d models\1960 Toyota Land Cruiser_\1960 Toyota Land Cruiser\textures\texture_0001.dds
+map_Ka E:\\data\\3d models\\1960 Toyota Land Cruiser_\\1960 Toyota Land Cruiser\\textures\\texture_0001.dds

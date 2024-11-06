@@ -1,0 +1,82 @@
+#pragma once
+
+#include "Animados.h"
+#include "stdlib.h"
+#include "time.h"
+
+class Items : public Animados {
+private:
+	bool active;
+	int PosicionX;
+
+public:
+	Items(string modelPath, string texturePath, bool mode, float _ox, float _oy, float _oz,
+		float _rangoX, float _rangoZ, float _orX, float _orY, float _orZ, float Angulo, bool _Movimientos, bool _active) :
+		Animados(modelPath, texturePath, mode, _ox, _oy, _oz, _rangoX, _rangoZ, _orX, _orY, _orZ, Angulo, _Movimientos) 
+	{
+		active = _active;
+		
+				
+		srand(time(NULL));
+
+		for (int i = 1; i <= 10; i++)
+		{
+			PosicionX = (1 + rand() % (11 - 1)) * 10;
+		}
+
+		this->SetOz(this->GetOz() + PosicionX);
+	};
+
+
+	void setActive(bool _Active) { active = _Active; }
+	bool getActive() { return active; }
+
+
+	void Animacion()
+	{
+
+		float _Angulo;
+		_Angulo = this->getAngulo();
+
+		if(_Angulo < 360 * 70)
+			_Angulo += 5.0f * 70;
+		else
+			_Angulo = 0;
+
+		this->setAngulo(_Angulo);
+
+
+		if (this->getMovimientos() == true)
+		{
+			this->SetorY(this->GetorY() + 0.05f);
+			if (this->GetorY() >= 5)
+			{
+				this->setMovimientos(false);
+				
+			}
+		}
+
+		if (this->getMovimientos() == false)
+		{
+			this->SetorY(this->GetorY() - 0.05f);
+			if (this->GetorY() <= 0)
+			{
+				this->setMovimientos(true);
+				
+			}
+		}
+
+	}
+
+	void recogeritem(bool recoger, HWND hWnd)
+	{
+		if (recoger == true)
+		{
+			this->setActive(false);
+
+			MessageBox(hWnd, "Item Recogido!", "INFO", MB_OK);
+
+		}
+	}
+
+};
